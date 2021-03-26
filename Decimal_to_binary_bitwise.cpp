@@ -1,6 +1,6 @@
     
     #include "bits/stdc++.h"
-    //#include <chrono>
+    #include <chrono>
     using namespace std;
     #define INF 1000000000000000003
     #define PB push_back 
@@ -36,6 +36,7 @@
     
     int main()
     {
+        auto t1 = std::chrono::high_resolution_clock::now();
         #ifndef ONLINE_JUDGE
             freopen("input.txt","r",stdin);
             freopen("output.txt","w",stdout);
