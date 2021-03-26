@@ -12,9 +12,9 @@
        
        for(int i=0;num!=0;i++)
        {
-           rem=num%10;
-           ans=ans*10+rem;
-           num/=10;
+           rem = num % 10;
+           ans = ans*10 + rem;
+           num /= 10;
        }
        cout<<ans<<endl;
     }
