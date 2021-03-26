@@ -14,8 +14,8 @@
        
        while(N!=0)
        {
-           oct.PB(N%8);
-           N/=8;
+           oct.PB(N % 8);
+           N /= 8;
        }
        
        reverse(oct.begin(),oct.end());
