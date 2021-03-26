@@ -4,6 +4,7 @@ using namespace std;
 
 void solve()
 {
+  // Check prime by for looping only upto sqrt(given_num).
   long long n;
   bool flag=1;
   cin>>n;
