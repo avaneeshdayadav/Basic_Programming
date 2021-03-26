@@ -10,7 +10,7 @@
        cin>>num;
        int rem;
        
-       for(int i=0;num!=0;i++)
+       for(int i=0; num!=0; i++)
        {
            rem = num % 10;
            ans = ans*10 + rem;
