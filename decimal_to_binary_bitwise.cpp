@@ -12,7 +12,7 @@
        cin>>N;
        vector<bool> v;
        
-       while(N!=0)
+       while(N != 0)
        {
            if(N & 1)
            {
@@ -22,12 +22,12 @@
            {
                v.PB(0);
            }
-           N>>=1;
+           N >>= 1;
        }
        
        reverse(v.begin(),v.end());
        
-       for(int i=0;i<v.size();i++)
+       for(int i=0; i<v.size(); i++)
        {
            cout<<v[i];
        }
