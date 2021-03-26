@@ -7,12 +7,12 @@
     {   
        // reverse a number using string conversion method and reverse function
        string str;
-       long long num;
-       cin>>str;
+       long long ans;
+       cin>>str; // Take the given integer as string or typecast
        
-       reverse(str.begin(),str.end());
-       num=stoi(str);
-       cout<<num<<endl;
+       reverse(str.begin(),str.end()); // Reverse string
+       ans = stoi(str); // convert reversed string to integer value.
+       cout<<ans<<endl;
     }
     
     int main()
