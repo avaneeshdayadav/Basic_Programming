@@ -22,11 +22,12 @@
     int main()
     {
         auto t1 = std::chrono::high_resolution_clock::now();
+        
         #ifndef ONLINE_JUDGE
             freopen("input.txt","r",stdin);
             freopen("output.txt","w",stdout);
         #endif
-    
+        
         ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
         
         int t=1;
@@ -35,9 +36,11 @@
         {
             solve();
         }
+        
         auto t2 = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
         cerr<<duration<<" micro sec";
+        
         return 0;     
     }
     
