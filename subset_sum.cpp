@@ -57,8 +57,9 @@
         vector<int64>arr;
         vector<int64>res;
         
-        arr.push_back(-1);
+        arr.push_back(-1); // Filling 0th index with rough value
         
+        // Taking N elemts of array.
         for(int64 i=1;i<=N;i++)
         {
             cin>>temp;
@@ -66,25 +67,29 @@
             arr.push_back(temp);
         }
         
-        if(sum<K)
+      
+        if(sum<K) //Checking if sum of all elements of array is < sum to be found.
         {
             cout<<"No such sum by given elements possible"<<endl;
             return;
         }
         
-        sort(arr.begin(),arr.end());
+        sort(arr.begin(),arr.end()); // Sorting array elements.
     
-        
+        // Filling Oth colmn with all values as 0.
         for(int64 i=0;i<=N;i++)
         {
             DP[i][0]=0;
         }
         
+        // Filling 0th row with values infinity except element on (0,0)
         for(int64 j=1;j<=K;j++)
         {
             DP[0][j]=INF;
         }
         
+      
+      
         for(int64 i=1;i<=N;i++)
         {
             for(int64 j=1;j<=K;j++)
