@@ -6,6 +6,13 @@
   2. Print the elements included in making the sum = k using Dyanamic approach.
   3. Finally also print the Dyanamic table.
   
+  INPUT :
+  T               // no of test cases.
+  
+  For each test case :
+  
+  N K             // N = no of elements in set, K = sum
+  arr elements    // N aray elements
 */
 
 
