@@ -95,10 +95,10 @@
             for(int64 j=1;j<=K;j++)
             {
                 if(j<arr[i])
-                    DP[i][j] = 0 + DP[i-1][j];
+                    DP[i][j] = 0 + DP[i-1][j];  // Element not included as it's > than sum required to make.
                 else
                 {
-                    DP[i][j] = min( (1 + DP[i-1][j-arr[i]]) , 0 + (DP[i-1][j]) );
+                    DP[i][j] = min( (1 + DP[i-1][j-arr[i]]) , 0 + (DP[i-1][j]) ); // Min of when element DP[i][j] included and once not included.
                     if(DP[i][j]>=INF)
                     {
                         DP[i][j]=INF;
