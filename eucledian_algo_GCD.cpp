@@ -1,5 +1,8 @@
 
-// Finding GCD by Eucledian Algorithm both by using - and % operator.
+//  Finding GCD by Eucledian Algorithm both by using - and % operator.
+
+//  GCD algorithm has worst case time complexity when both P and Q are prime numbers.
+//  The worst case time complexity is O(log2 max(Q, P)).
 
 #include <iostream>
 using namespace std;
