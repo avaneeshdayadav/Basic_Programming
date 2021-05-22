@@ -14,8 +14,7 @@ using namespace std;
     
 */
 int main() {
-	// your code goes here
-	
+
 	long long stored_index_of_every_elem[1000000],N,min_indx=INT_MAX;
 	cin>>N;
 	long long arr[N];
