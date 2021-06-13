@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -33,7 +32,13 @@ int main() {
     // unset/clear ith index bit
 	
     cout<<"After clearing ith bit, no is "<<(n & ~(1<<i))<<endl;
-
+    
+    
+    
+    // Update ith index bit = Clear + Set
+    
+    cout<<"After updating ith bit, no is "<<( (n & ~(1<<i)) | (1<<i) )<<endl;
+    
     
 	return 0;
 }
