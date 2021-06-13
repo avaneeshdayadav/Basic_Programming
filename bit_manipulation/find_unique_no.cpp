@@ -15,16 +15,29 @@ int main() {
         
     */
     
-    int arr1[7] = {2,4,6,3,4,6,2},size1=0,temp1=0;
     
-    size1 = sizeof(arr1)/sizeof(int);
+    // Soln to Problem Statement 1.
+        int arr1[7] = {2,4,6,3,4,6,2},size1=0,temp1=0;
+        
+        size1 = sizeof(arr1)/sizeof(int);
+        
+        for(int i=0;i<size1;i++)
+        {
+            temp1 = (temp1 xor arr1[i]);
+        }
+        
+        cout<<"Unique number is "<<temp1<<endl;
+        
+        
+    // Soln to Problem Statement 2.
     
-    for(int i=0;i<size1;i++)
-    {
-        temp1 = (temp1 xor arr1[i]);
-    }
+        /*
+            step 1 : total xor of whole array. All duplicates eliminated, final ans is xor of two req Unique no's.
+            step 2 : Find position of rightmost 1st set bit in total xor and xor all those no's of array which has this positin bit as 1 in them.
+            step 3 : All duplicates with this pos as 1 eliminated and only one Unique no which has this pos bit 1 is output of step 2.
+            step 4 : xor again total xor with this step 2 output to get another Unique no.
+        */
     
-    cout<<"Unique number is "<<temp1<<endl;
 
     return 0;
 }
