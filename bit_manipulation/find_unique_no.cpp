@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+
+
+int find_pos_of_first_rightmost_set_bit(int num)
+{
+    
+}
+
 int main() {
     
     /*
@@ -38,6 +45,25 @@ int main() {
             step 4 : xor again total xor with this step 2 output to get another Unique no.
         */
     
+        int arr2[8] = {2,4,6,7,4,5,6,2},size2=0,totalXOR=0,newXOR=0,pos=0;
+    
+        size2 = sizeof(arr2)/sizeof(int);
+        
+        for(int i=0;i<size2;i++)
+        {
+            totalXOR = (totalXOR xor arr2[i]);
+        }
+        
+        pos = find_pos_of_first_rightmost_set_bit(totalXOR);
+        
+        for(int i=0;i<size2;i++)
+        {
+            if(check_if_bit_at_pos_set(arr2[i],pos))
+                newXOR = newXOR xor arr2[i];
+        }
+        
+        cout<<"1st Unique no is "<<newXOR<<endl;
+        cout<<"2nd Unique no is "<<(totalXOR xor newXOR)<<endl;
 
     return 0;
 }
